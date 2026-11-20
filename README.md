@@ -92,6 +92,12 @@ I'm a frontend developer who enjoys building clean, responsive interfaces and tu
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=Misam-Shaban&bg_color=0d1117&color=c9d1d9&line=2dd4bf&point=60a5fa&area=true&hide_border=true" width="100%" alt="Contribution activity graph" />
 </div>
 
+## Contribution Snake
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/Misam-Shaban/Misam-Shaban/output/github-contribution-grid-snake-dark.svg" alt="Animated snake eating my GitHub contribution graph" width="100%" />
+</div>
+
 ## Connect
 
 <div align="center">
