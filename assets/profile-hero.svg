@@ -1,60 +1,126 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" fill="none">
   <defs>
-    <linearGradient id="bg" x1="30" y1="0" x2="1180" y2="360" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#120D18"/><stop offset=".55" stop-color="#251326"/><stop offset="1" stop-color="#38152F"/>
+    <linearGradient id="background" x1="40" y1="0" x2="1160" y2="360" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#08090F"/>
+      <stop offset=".58" stop-color="#120D19"/>
+      <stop offset="1" stop-color="#241027"/>
     </linearGradient>
-    <linearGradient id="pink" x1="790" y1="40" x2="1090" y2="320" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#FBCFE8"/><stop offset=".48" stop-color="#F472B6"/><stop offset="1" stop-color="#A855F7"/>
+    <linearGradient id="pink" x1="90" y1="70" x2="620" y2="310" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FBCFE8"/>
+      <stop offset=".52" stop-color="#F472B6"/>
+      <stop offset="1" stop-color="#A855F7"/>
     </linearGradient>
-    <radialGradient id="core" cx="0" cy="0" r="1" gradientTransform="matrix(0 120 -120 0 985 178)" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#FCE7F3"/><stop offset=".22" stop-color="#F472B6"/><stop offset=".62" stop-color="#A21CAF"/><stop offset="1" stop-color="#4A174C"/>
+    <linearGradient id="cyan" x1="760" y1="80" x2="1120" y2="290" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#67E8F9"/>
+      <stop offset="1" stop-color="#A78BFA"/>
+    </linearGradient>
+    <radialGradient id="ambient" cx="0" cy="0" r="1" gradientTransform="matrix(520 250 -230 480 1030 160)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#BE185D" stop-opacity=".26"/>
+      <stop offset=".55" stop-color="#7E22CE" stop-opacity=".12"/>
+      <stop offset="1" stop-color="#08090F" stop-opacity="0"/>
     </radialGradient>
-    <radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="matrix(290 175 -180 298 970 172)" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#DB2777" stop-opacity=".34"/><stop offset="1" stop-color="#DB2777" stop-opacity="0"/>
-    </radialGradient>
-    <pattern id="grid" width="38" height="38" patternUnits="userSpaceOnUse">
-      <path d="M38 0H0V38" stroke="#FBCFE8" stroke-opacity=".055"/>
+    <linearGradient id="panel" x1="720" y1="70" x2="1130" y2="290" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#171522" stop-opacity=".96"/>
+      <stop offset="1" stop-color="#0D1019" stop-opacity=".96"/>
+    </linearGradient>
+    <filter id="shadow" x="680" y="25" width="500" height="330" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="22"/>
+    </filter>
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <path d="M36 0H0V36" stroke="#FBCFE8" stroke-opacity=".045"/>
     </pattern>
-    <filter id="blur" x="760" y="-20" width="440" height="420" filterUnits="userSpaceOnUse">
-      <feGaussianBlur stdDeviation="28"/>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
   </defs>
   <style>
-    .name { font-family: 'Space Grotesk', 'Inter', 'Segoe UI', Arial, sans-serif; font-weight: 700; letter-spacing: -2.4px; }
-    .meta { font-family: 'Inter', 'Segoe UI', Arial, sans-serif; }
-    .orbit-a { transform-origin: 980px 178px; animation: orbit 18s linear infinite; }
-    .orbit-b { transform-origin: 980px 178px; animation: orbit-reverse 13s linear infinite; }
-    .float { animation: float 5s ease-in-out infinite; }
-    .pulse { transform-origin: 980px 178px; animation: pulse 4s ease-in-out infinite; }
-    .spark { animation: blink 2.8s ease-in-out infinite; }
+    .heading { font-family: 'Space Grotesk','Inter','Segoe UI',Arial,sans-serif; font-weight: 700; letter-spacing: -2px; }
+    .body { font-family: 'Inter','Segoe UI',Arial,sans-serif; }
+    .subtle { font-family: 'Inter','Segoe UI',Arial,sans-serif; letter-spacing: 2px; }
+    .float { animation: float 6s ease-in-out infinite; }
+    .orbit { transform-origin: 945px 180px; animation: orbit 22s linear infinite; }
+    .pulse { animation: pulse 3.8s ease-in-out infinite; }
+    .spark { animation: blink 2.4s ease-in-out infinite; }
+    @keyframes float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-7px); } }
     @keyframes orbit { to { transform: rotate(360deg); } }
-    @keyframes orbit-reverse { to { transform: rotate(-360deg); } }
-    @keyframes float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-9px); } }
-    @keyframes pulse { 0%,100% { opacity: .72; transform: scale(.96); } 50% { opacity: 1; transform: scale(1.04); } }
-    @keyframes blink { 0%,100% { opacity: .25; } 50% { opacity: 1; } }
-    @media (prefers-reduced-motion: reduce) { .orbit-a,.orbit-b,.float,.pulse,.spark { animation: none; } }
+    @keyframes pulse { 0%,100% { opacity: .55; } 50% { opacity: 1; } }
+    @keyframes blink { 0%,100% { opacity: .24; } 50% { opacity: .95; } }
+    @media (prefers-reduced-motion: reduce) { .float,.orbit,.pulse,.spark { animation: none; } }
   </style>
-  <rect width="1200" height="360" rx="28" fill="url(#bg)"/>
-  <rect width="1200" height="360" rx="28" fill="url(#grid)"/>
-  <rect width="1200" height="360" rx="28" fill="url(#glow)"/>
-  <ellipse cx="980" cy="178" rx="174" ry="142" fill="#DB2777" opacity=".15" filter="url(#blur)"/>
-  <g class="float">
-    <circle cx="980" cy="178" r="104" fill="url(#core)" class="pulse"/>
-    <ellipse cx="980" cy="178" rx="166" ry="57" stroke="#F9A8D4" stroke-opacity=".72" stroke-width="1.5" class="orbit-a"/>
-    <ellipse cx="980" cy="178" rx="148" ry="80" transform="rotate(58 980 178)" stroke="#F472B6" stroke-opacity=".55" stroke-width="1.3" class="orbit-b"/>
-    <ellipse cx="980" cy="178" rx="148" ry="80" transform="rotate(-58 980 178)" stroke="#C084FC" stroke-opacity=".45" stroke-width="1.2" class="orbit-a"/>
-    <path d="M815 178H1145M980 13V343" stroke="#FBCFE8" stroke-opacity=".12"/>
-    <circle cx="814" cy="178" r="5" fill="#FBCFE8" class="spark"/>
-    <circle cx="1090" cy="82" r="4" fill="#F472B6" class="spark"/>
-    <circle cx="1065" cy="280" r="5" fill="#C084FC" class="spark"/>
-    <circle cx="980" cy="178" r="13" fill="#FFF1F8" fill-opacity=".72"/>
+
+  <rect width="1200" height="360" rx="26" fill="url(#background)"/>
+  <rect width="1200" height="360" rx="26" fill="url(#grid)"/>
+  <rect width="1200" height="360" rx="26" fill="url(#ambient)"/>
+
+  <path d="M0 315H1200" stroke="#F472B6" stroke-opacity=".13"/>
+  <path d="M0 326H1200" stroke="#A855F7" stroke-opacity=".08"/>
+
+  <g opacity=".75">
+    <path d="M650 0L500 360" stroke="#F472B6" stroke-opacity=".07"/>
+    <path d="M690 0L540 360" stroke="#F472B6" stroke-opacity=".04"/>
+    <circle cx="655" cy="75" r="2.5" fill="#F9A8D4" class="spark"/>
+    <circle cx="665" cy="288" r="3" fill="#A78BFA" class="spark"/>
+    <circle cx="1170" cy="54" r="3" fill="#67E8F9" class="spark"/>
   </g>
-  <rect x="78" y="69" width="54" height="4" rx="2" fill="url(#pink)"/>
-  <text x="78" y="154" fill="#FFF7FB" font-size="62" class="name">Misam Shaban</text>
-  <text x="82" y="204" fill="#F9A8D4" font-size="24" font-weight="600" class="meta">Frontend Developer</text>
-  <text x="82" y="247" fill="#D8B4C8" font-size="17" class="meta">JavaScript  ·  React  ·  Building thoughtful web experiences</text>
-  <rect x="82" y="282" width="142" height="36" rx="18" fill="#BE185D" fill-opacity=".2" stroke="#F472B6" stroke-opacity=".62"/>
-  <text x="153" y="305" text-anchor="middle" fill="#FBCFE8" font-size="11" font-weight="700" letter-spacing="1.4" class="meta">LET'S BUILD</text>
-  <circle cx="1165" cy="48" r="2" fill="#FBCFE8" class="spark"/>
-  <circle cx="730" cy="302" r="2.5" fill="#F472B6" class="spark"/>
+
+  <rect x="76" y="65" width="52" height="4" rx="2" fill="url(#pink)"/>
+  <text x="76" y="111" fill="#F9A8D4" font-size="13" font-weight="700" class="subtle">FULL-STACK DEVELOPER</text>
+  <text x="72" y="182" fill="#FFF7FB" font-size="58" class="heading">Misam Shaban</text>
+  <text x="78" y="225" fill="#E9D5E5" font-size="20" class="body">Building end-to-end web experiences.</text>
+
+  <g class="body">
+    <rect x="78" y="256" width="92" height="34" rx="17" fill="#BE185D" fill-opacity=".16" stroke="#F472B6" stroke-opacity=".62"/>
+    <text x="124" y="278" text-anchor="middle" fill="#FBCFE8" font-size="13" font-weight="600">React</text>
+    <rect x="180" y="256" width="92" height="34" rx="17" fill="#BE185D" fill-opacity=".12" stroke="#F472B6" stroke-opacity=".48"/>
+    <text x="226" y="278" text-anchor="middle" fill="#FBCFE8" font-size="13" font-weight="600">Node.js</text>
+    <rect x="282" y="256" width="100" height="34" rx="17" fill="#6B21A8" fill-opacity=".16" stroke="#C084FC" stroke-opacity=".58"/>
+    <text x="332" y="278" text-anchor="middle" fill="#E9D5FF" font-size="13" font-weight="600">Express</text>
+    <rect x="392" y="256" width="108" height="34" rx="17" fill="#155E75" fill-opacity=".16" stroke="#67E8F9" stroke-opacity=".52"/>
+    <text x="446" y="278" text-anchor="middle" fill="#CFFAFE" font-size="13" font-weight="600">MongoDB</text>
+    <text x="78" y="323" fill="#AFA2B5" font-size="12" class="subtle">CODE  ·  BUILD  ·  LEARN  ·  IMPROVE</text>
+  </g>
+
+  <ellipse cx="945" cy="180" rx="230" ry="142" fill="#DB2777" opacity=".17" filter="url(#shadow)"/>
+  <g class="float">
+    <rect x="710" y="64" width="420" height="232" rx="20" fill="url(#panel)" stroke="#F9A8D4" stroke-opacity=".35"/>
+    <path d="M710 112H1130" stroke="#F9A8D4" stroke-opacity=".18"/>
+    <circle cx="738" cy="88" r="5" fill="#FB7185"/>
+    <circle cx="756" cy="88" r="5" fill="#FBBF24"/>
+    <circle cx="774" cy="88" r="5" fill="#4ADE80"/>
+    <text x="805" y="93" fill="#AFA2B5" font-size="11" class="body">APPLICATION ARCHITECTURE</text>
+
+    <path d="M805 201H1025" stroke="url(#pink)" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="6 7" class="orbit"/>
+    <path d="M835 184L835 164M945 184L945 164M1055 184L1055 164" stroke="#FBCFE8" stroke-opacity=".2"/>
+
+    <g>
+      <rect x="747" y="143" width="105" height="103" rx="14" fill="#251527" stroke="#F472B6" stroke-opacity=".75"/>
+      <circle cx="799" cy="174" r="17" fill="#BE185D" fill-opacity=".3" stroke="#F9A8D4" stroke-opacity=".8"/>
+      <path d="M791 174L797 180L808 167" stroke="#FBCFE8" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="799" y="216" text-anchor="middle" fill="#FBCFE8" font-size="12" font-weight="700" class="body">FRONTEND</text>
+      <text x="799" y="232" text-anchor="middle" fill="#BCA8BA" font-size="10" class="body">React</text>
+    </g>
+
+    <g>
+      <rect x="892" y="143" width="105" height="103" rx="14" fill="#21172C" stroke="#C084FC" stroke-opacity=".78"/>
+      <circle cx="944" cy="174" r="17" fill="#7E22CE" fill-opacity=".3" stroke="#C4B5FD" stroke-opacity=".8"/>
+      <path d="M936 168H952M936 174H948M936 180H950" stroke="#E9D5FF" stroke-width="2" stroke-linecap="round"/>
+      <text x="944" y="216" text-anchor="middle" fill="#E9D5FF" font-size="12" font-weight="700" class="body">BACKEND</text>
+      <text x="944" y="232" text-anchor="middle" fill="#BCA8BA" font-size="10" class="body">Node · Express</text>
+    </g>
+
+    <g>
+      <rect x="1037" y="143" width="70" height="103" rx="14" fill="#10222B" stroke="#67E8F9" stroke-opacity=".76"/>
+      <circle cx="1072" cy="174" r="17" fill="#0E7490" fill-opacity=".32" stroke="#67E8F9" stroke-opacity=".8"/>
+      <ellipse cx="1072" cy="169" rx="8" ry="3.5" stroke="#CFFAFE" stroke-width="1.6"/>
+      <path d="M1064 169V180C1064 185 1080 185 1080 180V169M1064 174C1064 179 1080 179 1080 174" stroke="#CFFAFE" stroke-width="1.4"/>
+      <text x="1072" y="216" text-anchor="middle" fill="#CFFAFE" font-size="11" font-weight="700" class="body">DATA</text>
+      <text x="1072" y="232" text-anchor="middle" fill="#A5DDE5" font-size="9" class="body">MongoDB</text>
+    </g>
+
+    <path d="M852 194H892M997 194H1037" stroke="#F9A8D4" stroke-width="2" stroke-linecap="round"/>
+    <path d="M884 188L892 194L884 200M1029 188L1037 194L1029 200" stroke="#F9A8D4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="920" y="273" text-anchor="middle" fill="#AFA2B5" font-size="10" class="subtle">FROM INTERFACE TO DATABASE</text>
+  </g>
+  <path d="M1149 47L1162 60M1162 47L1149 60" stroke="#F472B6" stroke-width="2" stroke-linecap="round" class="pulse"/>
 </svg>
