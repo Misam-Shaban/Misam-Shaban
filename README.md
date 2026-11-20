@@ -112,7 +112,11 @@ I'm a **Full-Stack Developer** who enjoys building complete web experiences — 
 ## Contribution Snake
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/Misam-Shaban/Misam-Shaban/output/github-contribution-grid-snake-dark.svg" width="100%" alt="Animated snake following my GitHub contribution graph" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Misam-Shaban/Misam-Shaban/output/github-contribution-grid-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Misam-Shaban/Misam-Shaban/output/github-contribution-grid-snake.svg" />
+    <img src="https://raw.githubusercontent.com/Misam-Shaban/Misam-Shaban/output/github-contribution-grid-snake.svg" width="100%" alt="Animated orange contribution snake" />
+  </picture>
 </div>
 
 ## Let's Connect
