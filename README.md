@@ -69,27 +69,51 @@ I'm a frontend developer who enjoys building clean, responsive interfaces and tu
 
 ## Featured Projects
 
-| Project | Description | Stack |
-|---|---|---|
-| [Findify](https://github.com/Misam-Shaban/Findify) | Full-stack job discovery app with job search, filtering and listings. | React, Vite, Tailwind, Node.js, Express, MongoDB |
-| [E-Commerce Site](https://github.com/Misam-Shaban/E-Commerce-Site) | E-commerce website project with frontend and backend structure. | JavaScript, frontend and backend tools |
-| [Job Cards with React](https://job-cards-with-react.vercel.app/) · [Source](https://github.com/Misam-Shaban/job-cards-with-react) | Job listings with reusable components and detailed job views. | React, React Router |
-| [Tic-Tac-Toe](https://github.com/Misam-Shaban/Tic-Tac-Teo-Game-Project) | Interactive two-player game with score tracking and sound effects. | HTML, CSS, JavaScript |
-| [Bootstrap Landing Page](https://github.com/Misam-Shaban/Landing-Page-Bootstrap) | Responsive landing page with navigation, carousel and content sections. | HTML, Bootstrap 5 |
-| [JavaScript Interview Preparation](https://github.com/Misam-Shaban/JavaScript-Interview-Perparation) | JavaScript practice and interview preparation. | JavaScript |
-| [DSA with JavaScript](https://github.com/Misam-Shaban/DSA-With-JavaScript) | Practice repository for data structures and algorithms. | JavaScript |
-| [React Learning](https://github.com/Misam-Shaban/Learning-React) | React and Vite learning exercises. | React, Vite |
-| [CV Design Practice](https://github.com/Misam-Shaban/Practice-with-cv-design) | Layout and CV design practice. | HTML, CSS |
+A selection of projects where I've been applying what I learn — from frontend interfaces to full-stack functionality.
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>Findify</h3>
+      <p>A job discovery platform focused on making it easier to explore and find relevant opportunities.</p>
+      <p><sub><b>React</b> · Vite · Tailwind CSS · Node.js · Express · MongoDB</sub></p>
+      <a href="https://github.com/Misam-Shaban/Findify">View source ↗</a>
+    </td>
+    <td width="50%" valign="top">
+      <h3>Job Cards with React</h3>
+      <p>A React job-listing interface with reusable cards, detailed job pages, and routing between views.</p>
+      <p><sub><b>React</b> · React Router · JavaScript</sub></p>
+      <a href="https://job-cards-with-react.vercel.app/">Live demo ↗</a> &nbsp;·&nbsp;
+      <a href="https://github.com/Misam-Shaban/job-cards-with-react">Source ↗</a>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>E-Commerce Site</h3>
+      <p>An e-commerce website project with a responsive storefront and frontend/backend development work.</p>
+      <p><sub><b>JavaScript</b> · React · Node.js · Express</sub></p>
+      <a href="https://github.com/Misam-Shaban/E-Commerce-Site">View source ↗</a>
+    </td>
+    <td width="50%" valign="top">
+      <h3>Tic-Tac-Toe</h3>
+      <p>A lightweight two-player browser game with interactive gameplay and score tracking.</p>
+      <p><sub><b>HTML</b> · CSS · JavaScript</sub></p>
+      <a href="https://github.com/Misam-Shaban/Tic-Tac-Teo-Game-Project">View source ↗</a>
+    </td>
+  </tr>
+</table>
+
+**More projects:** [JavaScript Interview Preparation](https://github.com/Misam-Shaban/JavaScript-Interview-Perparation) · [DSA with JavaScript](https://github.com/Misam-Shaban/DSA-With-JavaScript) · [React Learning](https://github.com/Misam-Shaban/Learning-React) · [Bootstrap Landing Page](https://github.com/Misam-Shaban/Landing-Page-Bootstrap) · [CV Design Practice](https://github.com/Misam-Shaban/Practice-with-cv-design)
 
 ## GitHub Overview
 
 <div align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=Misam-Shaban&show_icons=true&hide_border=true&bg_color=0d1117&title_color=2dd4bf&text_color=c9d1d9&icon_color=60a5fa&rank_icon=github" alt="GitHub statistics" />
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Misam-Shaban&layout=compact&hide_border=true&bg_color=0d1117&title_color=2dd4bf&text_color=c9d1d9" alt="Most used languages" />
+  <img height="165" src="https://github-readme-stats.vercel.app/api?username=Misam-Shaban&show_icons=true&hide_border=true&bg_color=0d1117&title_color=F472B6&text_color=c9d1d9&icon_color=F9A8D4&rank_icon=github" alt="GitHub statistics" />
+  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Misam-Shaban&layout=compact&hide_border=true&bg_color=0d1117&title_color=F472B6&text_color=c9d1d9" alt="Most used languages" />
 </div>
 
 <div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Misam-Shaban&bg_color=0d1117&color=c9d1d9&line=2dd4bf&point=60a5fa&area=true&hide_border=true" width="100%" alt="Contribution activity graph" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Misam-Shaban&bg_color=0d1117&color=FBCFE8&line=F472B6&point=F9A8D4&area=true&hide_border=true" width="100%" alt="Contribution activity graph" />
 </div>
 
 ## Contribution Snake
