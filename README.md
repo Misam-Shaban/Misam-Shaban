@@ -1,38 +1,75 @@
-# Misam Shaban
-### Frontend Developer · JavaScript · React
+<!-- Header -->
+<div align="center">
 
-I build responsive web interfaces and enjoy turning ideas into useful, well-crafted products. Currently focused on strengthening my frontend fundamentals while building projects with React.
-
-[GitHub](https://github.com/Misam-Shaban) · [Job Cards — Live Demo](https://job-cards-with-react.vercel.app/)
-
----
-
-## About
-
-- Focused on frontend development with JavaScript and React.
-- Building practical projects to improve problem-solving and development skills.
-- Learning Node.js, Express, MongoDB, and REST API development.
-- Practicing data structures and algorithms with JavaScript.
-- Exploring Generative AI and LangChain.
-
-## Technologies
-
-| Area | Tools and technologies |
-|---|---|
-| Frontend | HTML, CSS, JavaScript, React, React Router |
-| Styling | Tailwind CSS, Bootstrap, responsive design |
-| Backend | Node.js, Express.js, REST APIs |
-| Database | MongoDB, Mongoose |
-| Tools | Git, GitHub, VS Code, Postman, Vite |
-| Exploring | Data Structures & Algorithms, Generative AI, LangChain |
+<img src="https://capsule-render.vercel.app/api?type=waving&height=190&color=0:101827,50:172554,100:0f766e&text=Misam%20Shaban&fontColor=ffffff&fontSize=48&fontAlignY=38&desc=Frontend%20Developer%20%7C%20JavaScript%20%7C%20React&descAlignY=60&descSize=16" width="100%" alt="Misam Shaban — Frontend Developer" />
 
 <p>
-  <img src="https://skillicons.dev/icons?i=html,css,js,react,tailwind,bootstrap,nodejs,express,mongodb,git,github,vscode&perline=6" alt="Technologies: HTML, CSS, JavaScript, React, Tailwind, Bootstrap, Node.js, Express, MongoDB, Git, GitHub and VS Code" />
+  <a href="https://github.com/Misam-Shaban">GitHub</a>
+  &nbsp;·&nbsp;
+  <a href="https://job-cards-with-react.vercel.app/">Live Project</a>
 </p>
 
-## Selected Projects
+</div>
 
-| Project | What it does | Built with |
+## About Me
+
+I'm a frontend developer who enjoys building clean, responsive interfaces and turning ideas into practical web experiences. I’m focused on getting stronger with JavaScript and React through consistent learning and hands-on projects.
+
+- Building frontend projects with **JavaScript and React**.
+- Strengthening core frontend concepts and problem-solving.
+- Learning **Node.js, Express, MongoDB**, and REST APIs.
+- Practicing **Data Structures & Algorithms with JavaScript**.
+- Exploring **Generative AI and LangChain**.
+
+## Tech Stack
+
+<div align="center">
+
+### Frontend
+<table>
+  <tr>
+    <td align="center" width="110"><img src="https://skillicons.dev/icons?i=html" width="42" alt="HTML5" /><br/><sub><b>HTML5</b></sub></td>
+    <td align="center" width="110"><img src="https://skillicons.dev/icons?i=css" width="42" alt="CSS3" /><br/><sub><b>CSS3</b></sub></td>
+    <td align="center" width="110"><img src="https://skillicons.dev/icons?i=js" width="42" alt="JavaScript" /><br/><sub><b>JavaScript</b></sub></td>
+    <td align="center" width="110"><img src="https://skillicons.dev/icons?i=react" width="42" alt="React" /><br/><sub><b>React</b></sub></td>
+    <td align="center" width="110"><img src="https://skillicons.dev/icons?i=vite" width="42" alt="Vite" /><br/><sub><b>Vite</b></sub></td>
+    <td align="center" width="110"><img src="https://skillicons.dev/icons?i=react" width="42" alt="React Router" /><br/><sub><b>React Router</b></sub></td>
+  </tr>
+</table>
+
+### Styling
+<table>
+  <tr>
+    <td align="center" width="130"><img src="https://skillicons.dev/icons?i=tailwind" width="42" alt="Tailwind CSS" /><br/><sub><b>Tailwind CSS</b></sub></td>
+    <td align="center" width="130"><img src="https://skillicons.dev/icons?i=bootstrap" width="42" alt="Bootstrap" /><br/><sub><b>Bootstrap</b></sub></td>
+  </tr>
+</table>
+
+### Backend & Database
+<table>
+  <tr>
+    <td align="center" width="130"><img src="https://skillicons.dev/icons?i=nodejs" width="42" alt="Node.js" /><br/><sub><b>Node.js</b></sub></td>
+    <td align="center" width="130"><img src="https://skillicons.dev/icons?i=express" width="42" alt="Express" /><br/><sub><b>Express.js</b></sub></td>
+    <td align="center" width="130"><img src="https://skillicons.dev/icons?i=mongodb" width="42" alt="MongoDB" /><br/><sub><b>MongoDB</b></sub></td>
+    <td align="center" width="130"><img src="https://skillicons.dev/icons?i=mongoose" width="42" alt="Mongoose" /><br/><sub><b>Mongoose</b></sub></td>
+  </tr>
+</table>
+
+### Tools
+<table>
+  <tr>
+    <td align="center" width="120"><img src="https://skillicons.dev/icons?i=git" width="42" alt="Git" /><br/><sub><b>Git</b></sub></td>
+    <td align="center" width="120"><img src="https://skillicons.dev/icons?i=github" width="42" alt="GitHub" /><br/><sub><b>GitHub</b></sub></td>
+    <td align="center" width="120"><img src="https://skillicons.dev/icons?i=vscode" width="42" alt="VS Code" /><br/><sub><b>VS Code</b></sub></td>
+    <td align="center" width="120"><img src="https://skillicons.dev/icons?i=postman" width="42" alt="Postman" /><br/><sub><b>Postman</b></sub></td>
+  </tr>
+</table>
+
+</div>
+
+## Featured Projects
+
+| Project | Description | Stack |
 |---|---|---|
 | [Findify](https://github.com/Misam-Shaban/Findify) | Full-stack job discovery app with job search, filtering and listings. | React, Vite, Tailwind, Node.js, Express, MongoDB |
 | [E-Commerce Site](https://github.com/Misam-Shaban/E-Commerce-Site) | E-commerce website project with frontend and backend structure. | JavaScript, frontend and backend tools |
@@ -44,22 +81,25 @@ I build responsive web interfaces and enjoy turning ideas into useful, well-craf
 | [React Learning](https://github.com/Misam-Shaban/Learning-React) | React and Vite learning exercises. | React, Vite |
 | [CV Design Practice](https://github.com/Misam-Shaban/Practice-with-cv-design) | Layout and CV design practice. | HTML, CSS |
 
-## GitHub Activity
+## GitHub Overview
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Misam-Shaban&show_icons=true&hide_border=true&bg_color=ffffff&title_color=24292f&text_color=57606a&icon_color=0969da&rank_icon=github" height="160" alt="GitHub statistics" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Misam-Shaban&layout=compact&hide_border=true&bg_color=ffffff&title_color=24292f&text_color=57606a" height="160" alt="Most used languages" />
-</p>
+<div align="center">
+  <img height="165" src="https://github-readme-stats.vercel.app/api?username=Misam-Shaban&show_icons=true&hide_border=true&bg_color=0d1117&title_color=2dd4bf&text_color=c9d1d9&icon_color=60a5fa&rank_icon=github" alt="GitHub statistics" />
+  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Misam-Shaban&layout=compact&hide_border=true&bg_color=0d1117&title_color=2dd4bf&text_color=c9d1d9" alt="Most used languages" />
+</div>
 
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Misam-Shaban&bg_color=ffffff&color=57606a&line=0969da&point=24292f&area=true&hide_border=true" width="100%" alt="Contribution activity graph" />
-</p>
+<div align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Misam-Shaban&bg_color=0d1117&color=c9d1d9&line=2dd4bf&point=60a5fa&area=true&hide_border=true" width="100%" alt="Contribution activity graph" />
+</div>
 
-## Get in Touch
+## Connect
 
-I'm always glad to connect with developers, learn from others, and collaborate on interesting projects.
+<div align="center">
+  <a href="https://github.com/Misam-Shaban">
+    <img src="https://img.shields.io/badge/GitHub-Misam--Shaban-161b22?style=for-the-badge&logo=github&logoColor=white" alt="GitHub profile" />
+  </a>
+</div>
 
-[GitHub · Misam-Shaban](https://github.com/Misam-Shaban)
-
----
-<p align="center"><sub>Building consistently. Learning something new with every project.</sub></p>
+<div align="center">
+  <sub>Learning by building. Improving with every project.</sub>
+</div>
