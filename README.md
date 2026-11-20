@@ -1,7 +1,7 @@
-<!-- Header -->
+<!-- Profile hero -->
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=190&color=0:101827,50:172554,100:0f766e&text=Misam%20Shaban&fontColor=ffffff&fontSize=48&fontAlignY=38&desc=Frontend%20Developer%20%7C%20JavaScript%20%7C%20React&descAlignY=60&descSize=16" width="100%" alt="Misam Shaban — Frontend Developer" />
+<img src="https://raw.githubusercontent.com/Misam-Shaban/Misam-Shaban/main/assets/profile-hero.svg" width="100%" alt="Misam Shaban — Frontend Developer" />
 
 <p>
   <a href="https://github.com/Misam-Shaban">GitHub</a>
