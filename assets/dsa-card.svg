@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="660" viewBox="0 0 1200 660">
+<defs><linearGradient id="b" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#090D13"/><stop offset="1" stop-color="#1F170D"/></linearGradient><linearGradient id="o" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFD28A"/><stop offset="1" stop-color="#F97316"/></linearGradient></defs>
+<rect width="1200" height="660" rx="30" fill="url(#b)"/>
+<g font-family="Inter,Segoe UI,Arial,sans-serif">
+<text x="64" y="86" fill="#FDBA74" font-size="17" font-weight="700" letter-spacing="4">LEARNING &amp; PRACTICE</text>
+<text x="60" y="154" fill="#FFF7ED" font-size="54" font-weight="800">DSA with JavaScript</text>
+<text x="64" y="197" fill="#D6D3D1" font-size="21">Building logic, problem-solving and core programming skills</text>
+<rect x="60" y="235" width="1080" height="360" rx="22" fill="#111720" stroke="#FDBA74" stroke-opacity=".4"/>
+<rect x="60" y="235" width="1080" height="52" rx="22" fill="#1A2029"/>
+<circle cx="95" cy="261" r="6" fill="#FB923C"/><circle cx="115" cy="261" r="6" fill="#FBBF24"/><circle cx="135" cy="261" r="6" fill="#4ADE80"/>
+<text x="170" y="267" font-size="14" fill="#D6D3D1">javascript-practice.js</text>
+<text x="100" y="340" font-size="17" fill="#FDBA74">const</text><text x="164" y="340" font-size="17" fill="#F5F5F4">numbers = [4, 8, 15, 16, 23, 42];</text>
+<text x="100" y="390" font-size="17" fill="#FDBA74">function</text><text x="190" y="390" font-size="17" fill="#67E8F9">findMaximum</text><text x="335" y="390" font-size="17" fill="#F5F5F4">(values) {</text>
+<text x="132" y="430" font-size="17" fill="#C4B5A5">let max = values[0];</text>
+<text x="132" y="470" font-size="17" fill="#C4B5A5">for (const value of values) {</text>
+<text x="164" y="510" font-size="17" fill="#C4B5A5">if (value &gt; max) max = value;</text>
+<text x="132" y="550" font-size="17" fill="#C4B5A5">}</text><text x="100" y="580" font-size="17" fill="#F5F5F4">}</text>
+<rect x="760" y="315" width="320" height="220" rx="15" fill="#171F2A" stroke="#57534E"/>
+<text x="790" y="355" font-size="15" fill="#FDBA74" font-weight="700">CORE TOPICS</text>
+<rect x="790" y="380" width="120" height="37" rx="9" fill="#342312" stroke="#FF9F1C"/><text x="850" y="404" text-anchor="middle" font-size="13" fill="#FFEDD5">Arrays</text>
+<rect x="930" y="380" width="120" height="37" rx="9" fill="#342312" stroke="#FF9F1C"/><text x="990" y="404" text-anchor="middle" font-size="13" fill="#FFEDD5">Strings</text>
+<rect x="790" y="433" width="120" height="37" rx="9" fill="#342312" stroke="#FF9F1C"/><text x="850" y="457" text-anchor="middle" font-size="13" fill="#FFEDD5">Objects</text>
+<rect x="930" y="433" width="120" height="37" rx="9" fill="#342312" stroke="#FF9F1C"/><text x="990" y="457" text-anchor="middle" font-size="13" fill="#FFEDD5">Recursion</text>
+<text x="790" y="504" font-size="12" fill="#A8A29E">Practice • Understand • Improve</text>
+<text x="64" y="633" font-size="13" fill="#A8A29E" letter-spacing="2">JAVASCRIPT  ·  DATA STRUCTURES  ·  ALGORITHMS</text>
+</g></svg>
