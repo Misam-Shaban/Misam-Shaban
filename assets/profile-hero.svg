@@ -1,30 +1,60 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="350" viewBox="0 0 1200 350" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" fill="none">
   <defs>
-    <linearGradient id="bg" x1="50" y1="20" x2="1160" y2="350" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#190F1B"/><stop offset=".52" stop-color="#251326"/><stop offset="1" stop-color="#35152D"/>
+    <linearGradient id="bg" x1="30" y1="0" x2="1180" y2="360" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#120D18"/><stop offset=".55" stop-color="#251326"/><stop offset="1" stop-color="#38152F"/>
     </linearGradient>
-    <linearGradient id="pink" x1="100" y1="60" x2="890" y2="290" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#F9A8D4"/><stop offset=".5" stop-color="#F472B6"/><stop offset="1" stop-color="#C084FC"/>
+    <linearGradient id="pink" x1="790" y1="40" x2="1090" y2="320" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FBCFE8"/><stop offset=".48" stop-color="#F472B6"/><stop offset="1" stop-color="#A855F7"/>
     </linearGradient>
-    <radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="matrix(340 190 -180 322 990 90)" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#DB2777" stop-opacity=".32"/><stop offset="1" stop-color="#DB2777" stop-opacity="0"/>
+    <radialGradient id="core" cx="0" cy="0" r="1" gradientTransform="matrix(0 120 -120 0 985 178)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FCE7F3"/><stop offset=".22" stop-color="#F472B6"/><stop offset=".62" stop-color="#A21CAF"/><stop offset="1" stop-color="#4A174C"/>
     </radialGradient>
-    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
-      <path d="M36 0H0V36" stroke="#FBCFE8" stroke-opacity=".07"/>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="matrix(290 175 -180 298 970 172)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#DB2777" stop-opacity=".34"/><stop offset="1" stop-color="#DB2777" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="38" height="38" patternUnits="userSpaceOnUse">
+      <path d="M38 0H0V38" stroke="#FBCFE8" stroke-opacity=".055"/>
     </pattern>
+    <filter id="blur" x="760" y="-20" width="440" height="420" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="28"/>
+    </filter>
   </defs>
-  <rect width="1200" height="350" rx="28" fill="url(#bg)"/>
-  <rect width="1200" height="350" rx="28" fill="url(#grid)"/>
-  <rect width="1200" height="350" rx="28" fill="url(#glow)"/>
-  <circle cx="990" cy="175" r="126" stroke="#F9A8D4" stroke-opacity=".22"/>
-  <circle cx="990" cy="175" r="91" stroke="#F472B6" stroke-opacity=".30"/>
-  <circle cx="990" cy="175" r="55" fill="#BE185D" fill-opacity=".12" stroke="#F9A8D4" stroke-opacity=".5"/>
-  <path d="M880 175h220M990 65v220" stroke="#F9A8D4" stroke-opacity=".18"/>
-  <path d="M958 175l22-22 22 22-22 22-22-22Z" fill="url(#pink)" fill-opacity=".85"/>
-  <rect x="78" y="68" width="54" height="4" rx="2" fill="url(#pink)"/>
-  <text x="78" y="153" fill="#FFF7FB" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="60" font-weight="700" letter-spacing="-2">Misam Shaban</text>
-  <text x="82" y="201" fill="#FBCFE8" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="24" font-weight="500">Frontend Developer</text>
-  <text x="82" y="244" fill="#D8B4C8" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="17">JavaScript  ·  React  ·  Building thoughtful web experiences</text>
-  <rect x="82" y="278" width="132" height="34" rx="17" fill="#BE185D" fill-opacity=".22" stroke="#F472B6" stroke-opacity=".55"/>
-  <text x="148" y="300" text-anchor="middle" fill="#FBCFE8" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="1.2">LET'S BUILD</text>
+  <style>
+    .name { font-family: 'Space Grotesk', 'Inter', 'Segoe UI', Arial, sans-serif; font-weight: 700; letter-spacing: -2.4px; }
+    .meta { font-family: 'Inter', 'Segoe UI', Arial, sans-serif; }
+    .orbit-a { transform-origin: 980px 178px; animation: orbit 18s linear infinite; }
+    .orbit-b { transform-origin: 980px 178px; animation: orbit-reverse 13s linear infinite; }
+    .float { animation: float 5s ease-in-out infinite; }
+    .pulse { transform-origin: 980px 178px; animation: pulse 4s ease-in-out infinite; }
+    .spark { animation: blink 2.8s ease-in-out infinite; }
+    @keyframes orbit { to { transform: rotate(360deg); } }
+    @keyframes orbit-reverse { to { transform: rotate(-360deg); } }
+    @keyframes float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-9px); } }
+    @keyframes pulse { 0%,100% { opacity: .72; transform: scale(.96); } 50% { opacity: 1; transform: scale(1.04); } }
+    @keyframes blink { 0%,100% { opacity: .25; } 50% { opacity: 1; } }
+    @media (prefers-reduced-motion: reduce) { .orbit-a,.orbit-b,.float,.pulse,.spark { animation: none; } }
+  </style>
+  <rect width="1200" height="360" rx="28" fill="url(#bg)"/>
+  <rect width="1200" height="360" rx="28" fill="url(#grid)"/>
+  <rect width="1200" height="360" rx="28" fill="url(#glow)"/>
+  <ellipse cx="980" cy="178" rx="174" ry="142" fill="#DB2777" opacity=".15" filter="url(#blur)"/>
+  <g class="float">
+    <circle cx="980" cy="178" r="104" fill="url(#core)" class="pulse"/>
+    <ellipse cx="980" cy="178" rx="166" ry="57" stroke="#F9A8D4" stroke-opacity=".72" stroke-width="1.5" class="orbit-a"/>
+    <ellipse cx="980" cy="178" rx="148" ry="80" transform="rotate(58 980 178)" stroke="#F472B6" stroke-opacity=".55" stroke-width="1.3" class="orbit-b"/>
+    <ellipse cx="980" cy="178" rx="148" ry="80" transform="rotate(-58 980 178)" stroke="#C084FC" stroke-opacity=".45" stroke-width="1.2" class="orbit-a"/>
+    <path d="M815 178H1145M980 13V343" stroke="#FBCFE8" stroke-opacity=".12"/>
+    <circle cx="814" cy="178" r="5" fill="#FBCFE8" class="spark"/>
+    <circle cx="1090" cy="82" r="4" fill="#F472B6" class="spark"/>
+    <circle cx="1065" cy="280" r="5" fill="#C084FC" class="spark"/>
+    <circle cx="980" cy="178" r="13" fill="#FFF1F8" fill-opacity=".72"/>
+  </g>
+  <rect x="78" y="69" width="54" height="4" rx="2" fill="url(#pink)"/>
+  <text x="78" y="154" fill="#FFF7FB" font-size="62" class="name">Misam Shaban</text>
+  <text x="82" y="204" fill="#F9A8D4" font-size="24" font-weight="600" class="meta">Frontend Developer</text>
+  <text x="82" y="247" fill="#D8B4C8" font-size="17" class="meta">JavaScript  ·  React  ·  Building thoughtful web experiences</text>
+  <rect x="82" y="282" width="142" height="36" rx="18" fill="#BE185D" fill-opacity=".2" stroke="#F472B6" stroke-opacity=".62"/>
+  <text x="153" y="305" text-anchor="middle" fill="#FBCFE8" font-size="11" font-weight="700" letter-spacing="1.4" class="meta">LET'S BUILD</text>
+  <circle cx="1165" cy="48" r="2" fill="#FBCFE8" class="spark"/>
+  <circle cx="730" cy="302" r="2.5" fill="#F472B6" class="spark"/>
 </svg>
